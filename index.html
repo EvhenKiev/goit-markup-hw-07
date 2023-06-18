@@ -18,10 +18,12 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link rel="stylesheet" href="./css/media.css" />
     <link rel="stylesheet" href="./css/styles.css" />
+    
   </head>
   <body>
-    <header class="header">
+  <header class="header">
       <div class="header-container container">
         <nav class="header-nav">
           <a class="head-logo link" href="./index.html">
@@ -53,19 +55,33 @@
             </li>
           </ul>
         </address>
+        <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+          <svg width="24" height="24" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd"
+              d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+              clip-rule="evenodd"></path>
+          </svg>
+        </button>
+        
+        <ul class="menu">
+          <li><a href="" class="link">About</a></li>
+          <li><a href="" class="link">Products</a></li>
+          <li><a href="" class="link">Contacts</a></li>
+          <li><a href="" class="link">Career</a></li>
+        </ul>
       </div>
-    </header>
+    </header> 
     <main class="main">
       <section class="hero">
         <div class="container">
-          <h1 class="hero-title">Effective Solutions for Your Business</h1>
+          <h1 class="hero-title">Effective Solutions For Your Business</h1>
           <button class="hero-button" type="button" data-modal-open>
             Order Service
           </button>
         </div>
       </section>
 
-      <section class="features">
+     <!--<section class="features">
         <div class="container">
           <h2 class="visually-hidden" hidden>Our features</h2>
           <ul class="features-list list">
@@ -121,9 +137,9 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section>--> 
 
-      <section class="works">
+   <!--<section class="works">
         <div class="container">
           <h2 class="title-h-two">What are we doing</h2>
 
@@ -157,9 +173,9 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section>-->   
 
-      <section class="team">
+    <!--<section class="team">
         <div class="container">
           <h2 class="title-h-two">Our Team</h2>
 
@@ -419,8 +435,9 @@
           </ul>
         </div>
       </section>
-
-      <section class="customers">
+-->  
+    
+    <!--<section class="customers">
         <div class="customers-container container">
           <h2 class="title-h-two">Customers</h2>
 
@@ -469,10 +486,10 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section>--> 
     </main>
 
-    <footer class="footer">
+  <!-- <footer class="footer">
       <div class="container footer-container">
         <div class="footer-logo-container">
           <a class="head-logo link" href="./index.html">
@@ -558,8 +575,8 @@
           </form>
         </div>
       </div>
-    </footer>
-    <div class="backdrop is-hidden" data-modal>
+    </footer>--> 
+  <!--<div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button type="button" class="modal-close" data-modal-close>
           <svg class="modal-close-icon" width="8" height="8">
@@ -685,7 +702,7 @@
          
         
       
-    </div>
+    </div>-->  
     <script src="./js/modal.js"></script>
   </body>
 </html>
