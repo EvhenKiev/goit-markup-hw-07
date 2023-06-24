@@ -10,8 +10,11 @@
     --footer-icons-color: #31d0aa;
     --text-icon-color: #afb1b8;
     --modal-back-color: #fcfcfc;
+    --indent: 24px;
+    --item: 1;
 
 }
+
 
 
 
@@ -317,6 +320,11 @@ background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
     padding: 120px 0;
 }
 
+@media only screen and (max-width: 1157px) {
+    .features {
+        padding: 96px 0;
+    }
+}
 
 .title-h-two {
     font-family: 'Roboto', sans-serif;
@@ -344,12 +352,30 @@ background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
 }
 .features-list {
     display: flex;
-    gap: 24px;
+    flex-wrap: wrap;
+    gap: calc(var(--indent)*3);
  
 }
 
+@media only screen and (min-width: 768px) {
+    .features-list {
+        display: flex;
+        flex-wrap: wrap;
+        row-gap: 72px;
+        column-gap: 24px;
+    }
+}
+
+@media only screen and (min-width: 1157px) {
+    .features-list {
+        display: flex;
+        flex-wrap: nowrap;
+        gap: var(--indent);
+    }
+}
+
 .features-item {
-    width: calc((100% - 72px) / 4);
+    width: calc((100% - var(--indent)-1) / var(--item));
 }
 
 
