@@ -23,7 +23,7 @@
     
   </head>
   <body>
-  <!-- <header class="header">
+  <header class="header">
       <div class="header-container container">
         <nav class="header-nav">
           <a class="head-logo link" href="./index.html">
@@ -55,22 +55,46 @@
             </li>
           </ul>
         </address>
-        <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
-          <svg width="24" height="24" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-            <path fill-rule="evenodd"
-              d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
-              clip-rule="evenodd"></path>
-          </svg>
+      
+        <button type="button" class="menu-open-btn" data-menu-open>
+        <svg class="icon-mob-menu-open" width="32" height="22">
+          <use href="./images/icons.svg#icon-charm_menu-hamburger-2"></use>
+        </svg>
         </button>
-        
-        <ul class="menu">
-          <li><a href="" class="link">About</a></li>
-          <li><a href="" class="link">Products</a></li>
-          <li><a href="" class="link">Contacts</a></li>
-          <li><a href="" class="link">Career</a></li>
-        </ul>
       </div>
-    </header>  -->
+      <div class="mob-menu is-hidden" data-menu>
+        <div>
+          <button type="button" class="menu-close-button" data-menu-close>
+            <svg class="modal-close-icon" width="12" height="12">
+              <use href="./images/icons.svg#icon-Vector-1"></use>
+            </svg>
+          </button>
+        <ul class="mob-list list">
+          <li class="mob-item">
+            <a class="mob-link current link" href="./index.html">Studio</a>
+          </li>
+          <li class="mob-item">
+            <a class="mob-link link" href="./portfolio.html">Portfolio</a>
+          </li>
+          <li class="mob-item">
+            <a class="mob-link link" href="">Contacts</a>
+          </li>
+        </ul>
+        </nav>
+      </div>
+        <div>
+          <address class="mob-address">
+            <ul class="mob-address-list list">
+              <li class="mob-address-item">
+                <a class="mob-address-link link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+              </li>
+              <li class="mob-address-item">
+                <a class="mob-address-link link" href="tel:+110001111111">+11 (000) 111-11-11</a>
+              </li>
+            </ul>
+        </div>
+      </div>
+    </header> 
     <main class="main">
       <section class="hero">
         <div class="container">
@@ -80,7 +104,7 @@
           </button>
         </div>
       </section>
-<!-- <section class="features">
+<section class="features">
         <div class="container">
           <h2 class="visually-hidden" hidden>Our features</h2>
           <ul class="features-list list card">
@@ -136,9 +160,9 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
 
-   <!-- <section class="works">
+   <section class="works">
         <div class="container">
           <h2 class="title-h-two">What are we doing</h2>
 
@@ -172,7 +196,7 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
 
    <section class="team">
         <div class="team-container container">
@@ -575,7 +599,7 @@
         </div>
       </div>
     </footer>
-  <!--<div class="backdrop is-hidden" data-modal>
+  <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button type="button" class="modal-close" data-modal-close>
           <svg class="modal-close-icon" width="8" height="8">
@@ -701,7 +725,8 @@
          
         
       
-    </div>-->  
+    </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>
