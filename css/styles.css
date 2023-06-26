@@ -51,6 +51,7 @@ ul, ol {
     text-decoration: none;
 }
 .container {
+    min-width: 320px;
     width: 100%;
     max-width: 428px;
     padding: 0 16px;
@@ -271,6 +272,11 @@ font-family: 'Roboto', sans-serif;
 margin-left: auto;
 }
 
+/* .icon-mob-menu-open {
+    background-color: var(--address-list-color);
+    
+} */
+
 @media only screen and (min-width: 767px) {
     .menu-open-btn {
         display: none;
@@ -317,9 +323,25 @@ margin-left: auto;
 
 }
 
-.current {}
+.mob-soc-list {
+    display: flex;
+}
 
-.link {}
+@media only screen and (min-width: 428px) {
+    .mob-soc-list {
+        gap: 56px;
+    }
+}
+
+.mob-link {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 40px;
+    letter-spacing: 0.72px;
+    text-transform: capitalize;
+    color: var(--nav-item-color);
+    gap: 56px;
+}
 
 .mob-address {
     font-style: normal;
@@ -331,11 +353,26 @@ margin-left: auto;
     gap: 40px;
     justify-content: center;
     margin-bottom: 48px;
+    
 }
 
 .mob-address-item {}
 
-.mob-address-link {}
+.mob-tel-link {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 40px;
+    letter-spacing: 0.72;
+    text-transform: capitalize;
+}
+
+.mob-address-link {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 56px;
+    letter-spacing: 0.4;
+    color: var(--address-list-color);
+}
 
 /**=========HERO==========**/
 
@@ -1084,6 +1121,10 @@ width: calc((100% - 48px) / 3);
 
 
 @media only screen and (max-width: 767px) {
+    .footer-soc-text {
+        text-align: center;
+    }
+
     .footer-media {
         text-align: center;
     }
