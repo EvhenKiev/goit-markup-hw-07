@@ -1355,7 +1355,9 @@ padding: 96px 0 120px;
     overflow: hidden;
 }
 
-
+.footer-subs-label {
+    width: 100%;
+}
 
 .btn-portfolio:hover,
 .btn-portfolio:focus {
